@@ -239,7 +239,7 @@
 					}
 				};
 
-				xhr.open( 'GET', url, false );
+				xhr.open( 'GET', url + "?noCache=" + new Date().getTime(), false );
 
 				try {
 					xhr.send();

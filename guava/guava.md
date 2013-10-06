@@ -1,52 +1,71 @@
-# Markdown Demo
+# Guava Workshop
 
 
+with [Glen Smith](http://blogs.bytecode.com.au/glen)  ( [@glen_a_smith](http://twitter.com/glen_a_smith) )
 
-## External 1.1
+from [Bytecode](http://www.bytecode.com.au/)
 
-Content 1.1
+https://code.google.com/p/guava-libraries/
 
-```java
-public static void main(String[] args) {
-	// some arg work here
-}
+---
+
+## What's on the menu today?
+
+* Guava Mojo
+* Files
+* Strings
+* Boilerplace
+* Data Structures
+* Caching 
+* Functional
+
+---
+
+## How this presentation works
+
+These slides are done in (Reveal.js).
+
+Each section is a "Top Level" slide, then use down arrows to dive deeper
+
+Press the ESC key to go overview
+
+Press S to get to the Speaker notes.
+
+
+---V
+
+<section data-background="#00ff00">
+<h1>You're a sub-slide hero!</h1>
+<p>Don't forget you can ESC for overview</p>
+</section>
+
+---
+
+## Few works about Why Guava?
+
+* Developed at Google
+* Lots less boilerplace
+* Good patterns from smart people
+
+---
+
+## Getting started
+
+* Pull in libs
+* Make magic happen
+
+---V
+
+## Pull in the Libs
+
+Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/guava-libraries/).
+
+
+```xml
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>15.0</version>
+</dependency>
 ```
 
-1. Your normal text here
-2. Here is two
-3. And three
-
-Note: 
-This will only appear in the speaker notes window.
-* I can put in anything I like here
-* this is just some markup to share.
-
-Can I put in spaces.
-
-Perhaps lots of them
-
-
-
-## External 1.2
-
-Content 1.2
-
-* One
-* Two
-* Three
-
-
-## External 2
-
-Content 2.1
-
-
-
-## External 3.1
-
-Content 3.1
-
-
-## External 3.2
-
-Content 3.2

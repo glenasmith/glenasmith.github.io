@@ -16,35 +16,15 @@
 
 			<div class="slides">
 
-                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-                <section data-markdown="guava.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section> 
-
-                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
-                <section data-markdown data-separator="---">
-                    <script type="text/template">
-
-
-# Sample slide inline
-
-
-                    </script>
-                </section>
-
-                <!-- No "extra" slides, since there are no separators defined (so they'll become horizontal rulers) -->
-                <section data-markdown>
-                    <script type="text/template">
-                        A
-
-                        ---
-
-                        B
-
-                        ---
-
-                        C
-                    </script>
-                </section>
-
+                <!-- Use external markdown resource, separate slides by three dashes; vertical slides by three dashes and a V -->
+                <section data-markdown="guava.md" data-vertical="^---V"></section> 			
+				<section data-markdown="files.md" data-vertical="^---V"></section> 
+				<section data-markdown="strings.md" data-vertical="^---V"></section> 
+				<section data-markdown="objects.md" data-vertical="^---V"></section> 
+				<section data-markdown="collections.md" data-vertical="^---V"></section>
+				<section data-markdown="functional.md" data-vertical="^---V"></section>  
+				<section data-markdown="caching.md" data-vertical="^---V"></section> 
+				<section data-markdown="concurrency.md" data-vertical="^---V"></section> 
             </div>
 		</div>
 
