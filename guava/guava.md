@@ -5,7 +5,7 @@ with [Glen Smith](http://blogs.bytecode.com.au/glen)  ( [@glen_a_smith](http://t
 
 from [Bytecode](http://www.bytecode.com.au/)
 
-https://code.google.com/p/guava-libraries/
+
 
 ---
 
@@ -41,11 +41,13 @@ Press S to get to the Speaker notes.
 
 ---
 
-## Few works about Why Guava?
+## Few words about Why Guava?
 
-* Developed at Google
+* Developed at Google for internal use
 * Lots less boilerplace
 * Good patterns from smart people
+* Absorbs old "Google Collections" lib
+* Apache 2 license
 
 ---
 
@@ -53,6 +55,8 @@ Press S to get to the Speaker notes.
 
 * Pull in libs
 * Make magic happen
+* Browse [User Guide](https://code.google.com/p/guava-libraries/wiki/GuavaExplained)
+* Bookmark [Javadoc](http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/index.html)
 
 ---V
 
