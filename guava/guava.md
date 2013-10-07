@@ -73,3 +73,22 @@ Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/
 </dependency>
 ```
 
+---V
+
+## Stopwatch
+
+* More reliable than System.currentTimeMillis()
+* Formatted toString()
+* Output time in your own units
+
+```java
+Stopwatch stopwatch = Stopwatch.createStarted();
+doExpensiveOperation();
+stopwatch.stop(); // optional
+
+long seconds = stopwatch.elapsed(TimeUnit.SECONDS);
+
+log.info("time: " + stopwatch); // formatted string like "12.3 ms"
+
+stopwatch.reset()
+```
