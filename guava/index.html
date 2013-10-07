@@ -8,6 +8,16 @@
 
 		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="../reveal.js/css/theme/default.css" id="theme">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+		
 	</head>
 
 	<body>
