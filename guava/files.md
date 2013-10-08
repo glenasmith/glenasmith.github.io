@@ -2,6 +2,7 @@
 
 * Copying, Renaming
 * Simple reading
+* Most of this is replace in Java 7
 
 ---V
 
