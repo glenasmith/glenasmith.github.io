@@ -5,6 +5,14 @@
 
 ---V
 
+
+## Ordering collections
+
+* Using the Ordering class
+
+---V
+
+
 ## Comparison Chain
 
 * Great for implementing Comparable
