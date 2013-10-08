@@ -49,6 +49,14 @@ Press S to get to the Speaker notes.
 * Absorbs old "Google Collections" lib
 * Apache 2 license
 
+---V
+
+## Guava and Null
+
+* This is a library to teach you about null safety
+* Fields that are Nullable are marked @Nullable
+* Interesting to explore JSR 305
+
 ---
 
 ## Getting started
