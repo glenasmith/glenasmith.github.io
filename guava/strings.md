@@ -3,6 +3,7 @@
 * Blanks and Nullsafety
 * Padding
 * Splitting, Joining
+* CharMatcher
 
 ---V
 
@@ -122,3 +123,27 @@ assertEquals("Glen,Kylie,???,Isaac,Zoe", joined);
 ```java
 // example here
 ```
+
+
+---V
+
+## Char Matching
+
+* Lots of constants CharMatcher.WHITESPACE, JAVA_DIGIT, ASCII, ANY
+* Lots of factory goodness: CharMatch.is('x'), isNot(), oneOf(), inRange()
+
+```java
+String creditCar = CharMatcher.DIGIT.or(ChartMatcher.is("-").retainFrom(rawCardStr);
+```
+
+---V
+
+## Applying CharMatcher
+
+* matchesAllOf(), matchesAnyOf(), matchesNoneOf()
+* indexIn(), lastIndexIn(), countIn()
+* removeFrom(), retainFrom()
+* trimFrom(), trimLeadingFrom(), trimTrailingFrom()
+* collapseFrom(), trimAndCollapseFrom()
+* replaceFrom()
+
