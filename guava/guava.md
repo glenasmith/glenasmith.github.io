@@ -40,9 +40,6 @@ Each section is a "Top Level" slide, then use down arrows to dive deeper
 
 Press the ESC key to go overview
 
-Press S to get to the Speaker notes.
-
-
 ---V
 
 <section data-background="#00ff00">
