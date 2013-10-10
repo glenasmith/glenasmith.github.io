@@ -129,11 +129,13 @@ assertEquals("Glen,Kylie,???,Isaac,Zoe", joined);
 
 ## Char Matching
 
+* Much nicer than Regexp!
 * Lots of constants CharMatcher.WHITESPACE, JAVA_DIGIT, ASCII, ANY
 * Lots of factory goodness: CharMatch.is('x'), isNot(), oneOf(), inRange()
 
 ```java
-String creditCar = CharMatcher.DIGIT.or(ChartMatcher.is("-").retainFrom(rawCardStr);
+String creditCar = CharMatcher.DIGIT.or(CharMatcher.is("-").retainFrom(rawCardStr);
+int endOfSentence = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastIndexOf(myString);
 ```
 
 ---V
