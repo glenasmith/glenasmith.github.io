@@ -53,9 +53,9 @@ Press S to get to the Speaker notes.
 
 ## Guava and Null
 
-* This is a library to teach you about null safety
-* Fields that are Nullable are marked @Nullable
-* Interesting to explore JSR 305
+* This is a library to teach you about [null safety](https://code.google.com/p/guava-libraries/wiki/UsingAndAvoidingNullExplained)
+* Fields that are Nullable are marked [@Nullable](https://code.google.com/p/google-guice/wiki/UseNullable)
+* Interesting to explore JSR 305 et al (See [StackOverflow](http://stackoverflow.com/questions/4963300/which-notnull-java-annotation-should-i-use))
 
 ---
 
@@ -80,6 +80,14 @@ Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/
     <version>15.0</version>
 </dependency>
 ```
+
+---V
+
+## Need to Know
+
+* Pluralise things for instant happiness
+* Objects, Strings, Lists, Maps, Files, Collections2 (!)
+
 
 ---V
 
