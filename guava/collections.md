@@ -25,6 +25,12 @@ Map<String,String> userIdToName = Maps.newHashMap();
 ---V
 
 
+## Immutable Collections
+
+
+
+--V
+
 ## Comparison Chain
 
 * Great for implementing Comparable
