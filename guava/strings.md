@@ -77,7 +77,6 @@ List<String> nameList = Splitter.on(',')
 ## Splitting to Maps
 
 * Turning a String into a Map using key/value delims
-* 
 
 ```java
 

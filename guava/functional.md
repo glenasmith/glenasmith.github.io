@@ -1,9 +1,5 @@
 # Functional Java
 
----V
-
-## Getting Functional with Guava
-
 * Functional is so hot right now
 * But are you sure you want to do this?
 * The most abused part of Guava
