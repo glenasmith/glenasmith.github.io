@@ -14,16 +14,27 @@ from [Bytecode](http://www.bytecode.com.au/)
 * Guava Mojo
 * Files
 * Strings
-* Boilerplace
+* Boilerplate
 * Data Structures
 * Caching 
 * Functional
 
 ---
 
+## Workshop plan
+
+* Introduce concepts
+* Give sample code
+* Solve a coding challenge
+* Explore this presentation yourself
+
+---
+
 ## How this presentation works
 
-These slides are done in (Reveal.js).
+These slides are done in ([Reveal.js](http://lab.hakim.se/reveal-js/#/)).
+
+You can get to them at http://glenasmith.github.com/guava/
 
 Each section is a "Top Level" slide, then use down arrows to dive deeper
 
@@ -83,10 +94,11 @@ Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/
 
 ---V
 
-## Need to Know
+## Mental Model: Need to Know
 
 * Pluralise things for instant happiness
 * Objects, Strings, Lists, Maps, Files, Collections2 (!)
+* Don't stop loving the JDK
 
 
 ---V
