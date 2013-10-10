@@ -1,7 +1,8 @@
 # Caching
 
-* Formerly MapMaker
-* Now CacheBuilder
+* Formerly MapMaker, Now CacheBuilder
+* Purely RAM-based
+* Great for lazy-loading Maps with eviction
 
 ---V
 
@@ -11,6 +12,14 @@
 * Timeouts in human units
 
 ```java
-// code sample here
+LoadingCache<String,Person> personDetailsCache = 
+    CacheBuilder.newBuilder
+          .expireAfterWrite(10, TimeUnit.MINUTES)
+          .build(new CacheLoader<String,Person>() {
+              public Person load(String userId) {
+                return ldapService.findByUser(userId);
+              }
+          }
+              
 ```
 
