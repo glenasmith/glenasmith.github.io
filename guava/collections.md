@@ -8,7 +8,7 @@
 ## Generics working for you
 
 * Infers type from target
-* Uses varargs
+* Uses varargs for extra awesomeness
 
 ```java
 List<String> empty = Lists.newArrayList(); 
@@ -22,16 +22,27 @@ Map<String,String> userIdToName = Maps.newHashMap();
 
 * Using the Ordering class
 
+```java
+// sample code here
+```
+
 ---V
 
 
 ## Immutable Collections
 
+* Really immutable (unlike standard Java ones)
 
+```java
+// sample code here
+```
 
---V
+---V
 
 ## Comparison Chain
 
 * Great for implementing Comparable
 
+```java
+// sample code here
+```
