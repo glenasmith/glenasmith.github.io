@@ -67,5 +67,5 @@ String testing = Files.getNameWithoutExtension("testing.txt");
 * Create all parent dirs to a file
 
 ```java
-createParentDirs(new File("/create/path/to/file.txt"));
+Files.createParentDirs(new File("/create/path/to/file.txt"));
 ```
