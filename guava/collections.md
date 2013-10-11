@@ -35,6 +35,7 @@ Map<String,String> userIdToName = Maps.newHashMap();
 * Great for threat safe use
 * Safe to return to untrusted clients of your library
 * Fast, and memory efficient implementations
+* Ordering is preserved
 
 ```java
 public static final ImmutableSet<String> PEOPLE = ImmutableSet.of("Glen", "Kylie", "Isaac", "Zoe");
