@@ -14,7 +14,13 @@
 * But a true collection. What does .count() return?
 
 ```java
-// sample here
+Multiset<String> postcodes = ArrayListMultiSet.create()
+postcodes.add(2615);
+postcodes.add(2615);
+postcodes.add(2600);
+assert postcodes.size() == 3;
+assert postcodes.count(2615) == 2;
+
 ```
 
 
@@ -26,7 +32,14 @@
 * Not a true map, since get() returns a non-null collection to add to
 
 ```java
-// sample here
+MultiMap<Integer,String> postcodeToUserId = ArrayListMultiMap.create();
+postcodeToUserId.put(2615, "glensmith");
+postcodeToUserId.put(2615, "kyliesmith");
+postcodeToUserId.put(2600, "tonyabbott");
+List<String> belcoUsers  = postcodeToUserId.get(2615); // Glen & Kylie
+assert postcodeToUserId.size() == 3;
+postcodeToUserId.remove(2615);
+assert postcodeToUserId.size() == 1;
 ```
 
 ---V
@@ -61,7 +74,7 @@ carsTable.row("Holden"); // returns a Map mapping "Colour" to "Blue", "Model" to
 carsTable.column("Model"); // returns a Map mapping "Holden" to "VY", "Ford" to "XA"
 ```
 
----V
+
 
 
 
