@@ -64,16 +64,19 @@ checkState(init == true, "Please call init() before using object");
 
 ## Exception Utils
 
-* Throwable getRootCause(Throwable)
-* List<Throwable> getCausalChain(Throwable)
-* String getStackTraceAsString(Throwable)
+```java
+Throwable getRootCause(Throwable)
+List<Throwable> getCausalChain(Throwable)
+String getStackTraceAsString(Throwable)
+```
 
 ---V
 
 ## Propagating Exceptions
 
-* Throwables.propagateIfInstanceOf(t, IOException.class);
-* throw Throwables.propagate(t); // wraps in a runtime exception if required 
-
+```java
+Throwables.propagateIfInstanceOf(t, IOException.class);
+throw Throwables.propagate(t); // wraps in a runtime exception if required 
+```
  
 
