@@ -43,6 +43,22 @@ public static final ImmutableSet<String> PEOPLE = ImmutableSet.of("Glen", "Kylie
 
 ---V
 
+## Building Immutable Collections
+
+* Fluent interfaces for longer of() construction
+* Helpful for more complex collections (Multimaps)
+
+```java
+// Should use a Map example here
+ImmutableMap<Integer,String> map = postcodes 
+ImmutableMap.Builder<Integer,String>()
+.put(2600,"Tony")
+.putAll(2615,"Glen")
+.build();
+```
+
+---V
+
 ## Comparison Chain
 
 * Great for implementing Comparable
