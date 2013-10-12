@@ -30,6 +30,10 @@ from [Bytecode](http://www.bytecode.com.au/)
 
 ---
 
+> Nothing is taught until something is learned.
+
+---
+
 ## How this presentation works
 
 These slides are done in ([Reveal.js](http://lab.hakim.se/reveal-js/#/)).
