@@ -79,4 +79,13 @@ Throwables.propagateIfInstanceOf(t, IOException.class);
 throw Throwables.propagate(t); // wraps in a runtime exception if required 
 ```
  
+---V
 
+## Optionals
+
+* Mirrors what's coming in Java 8
+* Nullsafe returns for explicit resolve
+
+```java
+// sample here
+```
