@@ -60,10 +60,11 @@ Press the ESC key to go overview
 * Good patterns from smart people
 * Absorbs old "Google Collections" lib
 * Apache 2 license
+* You will use it every day of your coding life
 
 ---V
 
-## Guava and Null
+## Aside: Guava and Null
 
 * This is a library to teach you about [null safety](https://code.google.com/p/guava-libraries/wiki/UsingAndAvoidingNullExplained)
 * Fields that are Nullable are marked [@Nullable](https://code.google.com/p/google-guice/wiki/UseNullable)
@@ -98,13 +99,13 @@ Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/
 ## Mental Model: Need to Know
 
 * Pluralise things for instant happiness
-* Objects, Strings, Lists, Maps, Files, Collections2 (!)
+* Objects, Strings, Lists, Iterators, Maps, Files, Collections2 (!)
 * Don't stop loving the JDK
 
 
 ---V
 
-## Stopwatch
+## A first taste: Stopwatch
 
 * More reliable than System.currentTimeMillis()
 * Formatted toString()
