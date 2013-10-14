@@ -15,14 +15,29 @@
 * NB: will perform cache maintenance on read/writes ONLY
 
 ```java
-LoadingCache<String,Person> personDetailsCache = 
-    CacheBuilder.newBuilder
-          .expireAfterWrite(10, TimeUnit.MINUTES)
-          .build(new CacheLoader<String,Person>() {
-              public Person load(String userId) {
-                return ldapService.findByUser(userId);
-              }
-          }
+final AtomicInteger counter = new AtomicInteger();
+        
+LoadingCache<String, Account> accountDetailsCache
+        = CacheBuilder.newBuilder()
+        .expireAfterWrite(1, TimeUnit.SECONDS)
+        .build(new CacheLoader<String, Account>() {
+            public Account load(String userId) {
+                return new Account(userId, Integer.toString(counter.incrementAndGet()), 
+                        userId + "@sample.com");
+            }
+        });
+
+Account glen = accountDetailsCache.get("glen");
+assertEquals("1", glen.getPassword());
+glen = accountDetailsCache.get("glen");
+assertEquals("1", glen.getPassword());
+
+Thread.sleep(1100);
+
+glen = accountDetailsCache.get("glen");
+assertEquals("2", glen.getPassword());
+glen = accountDetailsCache.get("glen");
+assertEquals("2", glen.getPassword());
               
 ```
 

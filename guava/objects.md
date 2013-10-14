@@ -15,6 +15,18 @@ Objects.equals(a, b);
 
 ---V
 
+## hashCode()
+
+* Uses varargs
+* Nullsafe
+
+```java
+int code = Objects.hashCode(1, 2, 3, null, 4);
+assertEquals(29615141, code);
+```
+
+---V
+
 ## Defining your own toString()
 
 * Equavalent to commons ToStringBuilder()
@@ -44,3 +56,20 @@ Objects.equals(a, b);
    String firstNonNull = Objects.firstNonNull(one, two); // two
 ```
 
+---V
+
+## Comparison Chain
+
+* Great for implementing Comparable
+
+```java
+@Override
+public int compareTo(Account o) {
+
+    return ComparisonChain.start()
+            .compare(username, o.username)
+            .compare(email, o.email)              
+            .result();
+    
+}
+```

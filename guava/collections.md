@@ -49,20 +49,29 @@ public static final ImmutableSet<String> PEOPLE = ImmutableSet.of("Glen", "Kylie
 * Helpful for more complex collections (Multimaps)
 
 ```java
-// Should use a Map example here
-ImmutableMap<Integer,String> map = postcodes 
-ImmutableMap.Builder<Integer,String>()
-.put(2600,"Tony")
-.putAll(2615,"Glen")
-.build();
+ImmutableMap<Integer, String> postcodes = new ImmutableMap.Builder<Integer,String>()
+                .put(2600, "Tony")
+                .put(2615, "Glen")
+                .build();
+        assertEquals("Tony", postcodes.get(2600));
 ```
 
 ---V
 
-## Comparison Chain
+## Reasoning about Sets
 
-* Great for implementing Comparable
+* Offers difference(), symetricDifference(), intersection(), union()
 
 ```java
-// sample code here
+Set<String> first = Sets.newHashSet("a", "b", "c");
+Set<String> second = Sets.newHashSet("c", "d", "e");
+
+assertEquals(ImmutableSet.of("a", "b"), Sets.difference(first, second)); 
+assertEquals(ImmutableSet.of("a", "b", "d", "e"), Sets.symmetricDifference(first, second)); 
+assertEquals(ImmutableSet.of("c"), Sets.intersection(first, second)); 
+assertEquals(ImmutableSet.of("a", "b", "c", "d", "e"), Sets.union(first, second)); 
 ```
+
+---V
+
+

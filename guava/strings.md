@@ -79,11 +79,10 @@ List<String> nameList = Splitter.on(',')
 * Turning a String into a Map using key/value delims
 
 ```java
-
 String faveCols = "Glen=Orange;Kylie=Aqua;Isaac=Blue;Zoe=Yellow";
 Map<String,String> userToColour = Splitter.on(";")
 	.withKeyValueSeparator("=")
-	.split(userToColour);
+	.split(faveCols);
 assertEquals("Orange", userToColour.get("Glen"));
 ```
 
@@ -92,6 +91,7 @@ assertEquals("Orange", userToColour.get("Glen"));
 ## Joiner
 
 * Where there is split() there must be join()
+* has skipNulls() and useForNull("(missing)")
 
 ```java
 String joined = Joiner.on(",")
@@ -117,10 +117,13 @@ assertEquals("Glen,Kylie,???,Isaac,Zoe", joined);
 
 ## Joining to Maps
 
-* withKeyValueSeparator()
+* Join a map to a String withKeyValueSeparator()
 
 ```java
-// example here
+Map<String,Integer> mapToJoin = ImmutableMap.of("one", 1, "two", 2, "three", 3);
+        
+String joined = Joiner.on(",").withKeyValueSeparator("=").join(mapToJoin);
+assertEquals("one=1,two=2,three=3", joined);
 ```
 
 
@@ -133,8 +136,13 @@ assertEquals("Glen,Kylie,???,Isaac,Zoe", joined);
 * Lots of factory goodness: CharMatch.is('x'), isNot(), oneOf(), inRange()
 
 ```java
-String creditCar = CharMatcher.DIGIT.or(CharMatcher.is("-").retainFrom(rawCardStr);
-int endOfSentence = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastIndexOf(myString);
+assertTrue(CharMatcher.DIGIT.matches('0'));
+assertTrue(CharMatcher.DIGIT.matchesAllOf("123456789"));
+assertTrue(CharMatcher.WHITESPACE.or(CharMatcher.DIGIT).
+                or(CharMatcher.JAVA_LOWER_CASE).matchesAllOf("abc 123"));
+assertEquals("123-def", CharMatcher.anyOf("cba").collapseFrom("123abcdef", '-'));
+assertEquals("123def", CharMatcher.anyOf("cba").removeFrom("123abcdef"));
+assertEquals("abc", CharMatcher.anyOf("cba").retainFrom("123abcdef"));
 ```
 
 ---V
@@ -147,4 +155,15 @@ int endOfSentence = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastInde
 * trimFrom(), trimLeadingFrom(), trimTrailingFrom()
 * collapseFrom(), trimAndCollapseFrom()
 * replaceFrom()
+
+---V
+
+## Lab Ideas
+
+* Shorten a long string to "A long stri.." making sure to not split a word like I did here.
+
+```java
+int endOfSentence = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastIndexOf(myString);
+```
+
 

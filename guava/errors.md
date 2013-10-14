@@ -17,7 +17,7 @@
 ```java
 if (itemsSold < 1) {
    throw new IllegalArgumentException(
-        "Must sell at least one item, invalid sale count: ", itemsSold);
+        "Must sell at least one item, invalid sale count: " + itemsSold);
 }
 ```
 
@@ -87,5 +87,23 @@ throw Throwables.propagate(t); // wraps in a runtime exception if required
 * Nullsafe returns for explicit resolve
 
 ```java
-// sample here
+private Optional<String> toLower(String incoming) {
+	if (incoming != null) {
+	    return Optional.of(incoming.toLowerCase());
+	} else {
+	    return Optional.absent();
+	}     
+}
+```
+
+
+```java
+Optional<String> lower = toLower("HI");
+assertTrue(lower.isPresent());
+assertEquals("hi", lower.get());
+
+lower = toLower(null);
+assertFalse(lower.isPresent());        
+String defaultMe = lower.or("bye");
+assertEquals("bye", defaultMe);  
 ```

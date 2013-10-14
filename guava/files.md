@@ -13,7 +13,13 @@
 
 ```java
 List<String> allLines = Files.readLines(new File("test.txt"), Charsets.UTF_8);
-byte[] allFileBytes = Files.readBytes(new File("image.png"));
+byte[] allFileBytes = Files.toByteArray(new File("image.png"));
+List<Account> List<Account> allAccounts = Files.readLines(new File("accounts.txt"),
+                Charsets.UTF_8, new LineProcessor<List<Account>>() {
+   @Override public boolean processLine(String string) throws IOException { }
+
+   @Override public List<Account> getResult() { };
+});
 ```
 
 ---V
@@ -25,7 +31,7 @@ byte[] allFileBytes = Files.readBytes(new File("image.png"));
 ```java
 File from = new File("old.txt");
 File to = new File("new.txt");
-Files.copy(from, to);
+Files.move(from, to);
 ```
 
 ---V
@@ -47,7 +53,7 @@ Files.copy(from, to);
 * Creates an empty file
 
 ```java
-Files.touch(new File("touch.txt"));
+Files.touch(new File("touching.txt"));
 ```
 
 ---V
