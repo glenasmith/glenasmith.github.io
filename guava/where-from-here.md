@@ -1,6 +1,6 @@
 # Where To From Here?
 
-* Lots more to explore
+Lots more to explore...
 
 ---V
 
@@ -23,7 +23,7 @@
 
 # Thanks for Coming!
 
-* We should do this again!
+We should do this again!
 
 
 
