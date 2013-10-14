@@ -37,8 +37,8 @@ assertEquals(29615141, code);
 // Returns "Customer{name=glen, userId=glen_a_smith}"
    return Objects.toStringHelper(this)
        .add("name", name)
-		.add("twitterId", twitterId)
-		.omitNullValues()
+       .add("twitterId", twitterId)
+       .omitNullValues()
        .toString();
 ```
 
@@ -48,7 +48,7 @@ assertEquals(29615141, code);
 ## Find the first non-null
 
 * Return the first non-null
-* NOTE: Throws a NPE if both are null!
+* Throws a NPE if both are null!
 
 ```java
    String one = null;
