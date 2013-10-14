@@ -22,14 +22,12 @@
 * Let's abuse it
 
 ```java
-public List<People> findPeopleInPostcode(final int postCode) {
-    return Lists.newArrayList(Iterables.filter(allPeople, Predicate<People>() {
-        @Override
-        public boolean apply(People person) {
-            return person.getPostcode() == postCode;
-        }
-   });
-}
+List<Account> badPasswords = Lists.newArrayList(Iterables.filter(accounts, new Predicate<Account>() {
+    @Override
+    public boolean apply(Account account) {
+        return account.getPassword().equals("pw");
+    }
+}));
 ```
 
 ---V
@@ -39,12 +37,12 @@ public List<People> findPeopleInPostcode(final int postCode) {
 * Iterables.tranform(Iterable, Function), Collections2.transform, etc
 
 ```java
-Collection<String> emails = Collections2.transform(allPeople, new Function<People, String>() {
+Collection<String> emails = Collections2.transform(accounts, new Function<Account, String>() {
     @Override
-    public String apply(People person) {
-      return person.getEmail();
+    public String apply(Account account) {
+        return account.getEmail();
     }
-}
+});
 ```
 
 ---V
