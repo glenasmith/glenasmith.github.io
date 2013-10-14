@@ -10,6 +10,7 @@
 
 * Slurping in as a list of String
 * Pulling in a byte[]
+* Convert lines to Objects
 
 ```java
 List<String> allLines = Files.readLines(new File("test.txt"), Charsets.UTF_8);
@@ -26,8 +27,6 @@ List<Account> List<Account> allAccounts = Files.readLines(new File("accounts.txt
 
 ## Move/Rename a file
 
-* Moving files easily
-
 ```java
 File from = new File("old.txt");
 File to = new File("new.txt");
@@ -37,8 +36,6 @@ Files.move(from, to);
 ---V
 
 ## Copying a file
-
-* Copying a file 
 
 ```java
 File from = new File("src.txt");
