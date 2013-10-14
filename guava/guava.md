@@ -34,13 +34,15 @@ from [Bytecode](http://www.bytecode.com.au/)
 
 ---
 
-## How this presentation works
-
-These slides are done in ([Reveal.js](http://lab.hakim.se/reveal-js/#/)).
-
 You can get to these slides at http://glenasmith.github.com/guava/
 
 You can get the matching source project at https://github.com/glenasmith/guava-examples
+
+---
+
+## How this presentation works
+
+These slides are done in ([Reveal.js](http://lab.hakim.se/reveal-js/#/)).
 
 Each section is a "Top Level" slide, then use down arrows to dive deeper
 
