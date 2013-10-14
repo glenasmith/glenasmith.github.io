@@ -16,8 +16,7 @@
 
 ```java
 if (itemsSold < 1) {
-   throw new IllegalArgumentException(
-        "Must sell at least one item, invalid sale count: " + itemsSold);
+   throw new IllegalArgumentException("Must sell at least one item, invalid sale count: " + itemsSold);
 }
 ```
 
