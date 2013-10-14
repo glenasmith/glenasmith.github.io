@@ -28,7 +28,7 @@ assertEquals(2, postcodes.count(2615));
 
 ## MultiMap
 
-* Yes! Finally a Map<K, List<V>>
+* Yes! Finally a Map of Key to List of Values
 * Not a true map, since get() returns a non-null collection to add to
 
 ```java
