@@ -42,7 +42,7 @@ You can get the matching source project at https://github.com/glenasmith/guava-e
 
 ## How this presentation works
 
-These slides are done in ([Reveal.js](http://lab.hakim.se/reveal-js/#/)).
+These slides are done in [Reveal.js](http://lab.hakim.se/reveal-js/#/).
 
 Each section is a "Top Level" slide, then use down arrows to dive deeper
 
@@ -60,11 +60,11 @@ Press the ESC key to go overview
 ## Few words about Why Guava?
 
 * Developed at Google for internal use
-* Lots less boilerplace
+* Reduces boilerplate
 * Good patterns from smart people
 * Absorbs old "Google Collections" lib
 * Apache 2 license
-* You will use it every day of your coding life
+* You will use it every day life - it's like riding a Unicorn
 
 ---V
 
@@ -104,7 +104,7 @@ Add it to your pom.xml, build.gradle or [download it](https://code.google.com/p/
 
 * Pluralise things for instant happiness
 * Objects, Strings, Lists, Iterators, Maps, Files, Collections2 (!)
-* Don't stop loving the JDK
+* Don't stop loving the JDK: Mix and match
 
 
 ---V
