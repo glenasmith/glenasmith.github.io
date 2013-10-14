@@ -53,7 +53,7 @@ ImmutableMap<Integer, String> postcodes = new ImmutableMap.Builder<Integer,Strin
                 .put(2600, "Tony")
                 .put(2615, "Glen")
                 .build();
-        assertEquals("Tony", postcodes.get(2600));
+assertEquals("Tony", postcodes.get(2600));
 ```
 
 ---V
@@ -72,6 +72,6 @@ assertEquals(ImmutableSet.of("c"), Sets.intersection(first, second));
 assertEquals(ImmutableSet.of("a", "b", "c", "d", "e"), Sets.union(first, second)); 
 ```
 
----V
+
 
 
