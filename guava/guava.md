@@ -44,7 +44,7 @@ You can get the matching source project at https://github.com/glenasmith/guava-e
 
 These slides are done in [Reveal.js](http://lab.hakim.se/reveal-js/#/).
 
-Each section is a "Top Level" slide, then use down arrows to dive deeper
+Each Guava section is a "top level" slide, down arrow to dive deeper
 
 Press the ESC key to go overview
 
