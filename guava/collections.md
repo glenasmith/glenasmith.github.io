@@ -32,7 +32,7 @@ Map<String,String> userIdToName = Maps.newHashMap();
 ## Immutable Collections
 
 * Really immutable (unlike standard "unmodifiable" Java ones)
-* Great for threat safe use
+* Great for thread safe use
 * Safe to return to untrusted clients of your library
 * Fast, and memory efficient implementations
 * Ordering is preserved
