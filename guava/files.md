@@ -14,7 +14,9 @@
 
 ```java
 List<String> allLines = Files.readLines(new File("test.txt"), Charsets.UTF_8);
+
 byte[] allFileBytes = Files.toByteArray(new File("image.png"));
+
 List<Account> List<Account> allAccounts = Files.readLines(new File("accounts.txt"),
                 Charsets.UTF_8, new LineProcessor<List<Account>>() {
    @Override public boolean processLine(String string) throws IOException { }
@@ -67,7 +69,7 @@ String testing = Files.getNameWithoutExtension("testing.txt");
 
 ## Misc Directory Stuff
 
-* Create all parent dirs to a file
+* Create all parent dirs to a file (but not the file)
 
 ```java
 Files.createParentDirs(new File("/create/path/to/file.txt"));
