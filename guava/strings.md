@@ -91,7 +91,7 @@ assertEquals("Orange", userToColour.get("Glen"));
 ## Joiner
 
 * Where there is split() there must be join()
-* has skipNulls() and useForNull("(missing)")
+* has skipNulls() and useForNull("?")
 
 ```java
 String joined = Joiner.on(",")
