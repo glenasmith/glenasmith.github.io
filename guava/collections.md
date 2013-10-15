@@ -38,7 +38,8 @@ Map<String,String> userIdToName = Maps.newHashMap();
 * Ordering is preserved
 
 ```java
-public static final ImmutableSet<String> PEOPLE = ImmutableSet.of("Glen", "Kylie", "Isaac", "Zoe");
+public static final ImmutableSet<String> PEOPLE = 
+        ImmutableSet.of("Glen", "Kylie", "Isaac", "Zoe");
 ```
 
 ---V
@@ -49,7 +50,8 @@ public static final ImmutableSet<String> PEOPLE = ImmutableSet.of("Glen", "Kylie
 * Helpful for more complex collections (Multimaps)
 
 ```java
-ImmutableMap<Integer, String> postcodes = new ImmutableMap.Builder<Integer,String>()
+ImmutableMap<Integer, String> postcodes = 
+    new ImmutableMap.Builder<Integer,String>()
                 .put(2600, "Tony")
                 .put(2615, "Glen")
                 .build();
