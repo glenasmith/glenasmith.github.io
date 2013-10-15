@@ -25,7 +25,7 @@ from [Bytecode](http://www.bytecode.com.au/)
 
 * Introduce concepts
 * Give sample code
-* Solve a coding challenge
+* Solve a coding challenge (as a pair?)
 * Explore this presentation yourself
 
 ---
@@ -44,7 +44,7 @@ You can get the matching source project at https://github.com/glenasmith/guava-e
 
 These slides are done in [Reveal.js](http://lab.hakim.se/reveal-js/#/).
 
-Each Guava section is a "top level" slide, down arrow to dive deeper
+Each module is a "top level" slide, down arrow to dive deeper
 
 Press the ESC key to go overview
 
@@ -59,7 +59,7 @@ Press the ESC key to go overview
 
 ## Few words about Why Guava?
 
-* Developed at Google for internal use
+* Developed at Google from internal use
 * Reduces boilerplate
 * Good patterns from smart people
 * Absorbs old "Google Collections" lib
