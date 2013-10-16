@@ -20,10 +20,32 @@ Map<String,String> userIdToName = Maps.newHashMap();
 
 ## Ordering collections
 
-* Using the Ordering class
+* Fluent Comparitor to build complex sorting
+* Works with or without existing Comparitor impl
+* Can do min(), max(), reverse(), isOrdered() and lots more
 
 ```java
-// sample code here
+List<Account> accounts = ImmutableList.of(
+		new Account("glen", "pw", "glen@glensmith.com.au"),
+		new Account("glen", "pw", "glen@bytecode.com.au"),
+		new Account("kylie", "pw", "kylie@bytecode.com.au")
+		
+);
+Ordering<Account> byNameThenEmail = new Ordering<Account>() {
+
+	@Override
+	public int compare(Account left, Account right) {
+		return ComparisonChain.start().
+				compare(left.getUsername(), right.getUsername()).
+				compare(left.getEmail(), right.getEmail()).
+				result();
+	}
+	
+};
+assertFalse(byNameThenEmail.isOrdered(accounts));
+assertEquals("glen@bytecode.com.au", 
+		byNameThenEmail.sortedCopy(accounts).get(0).getEmail());
+assertEquals("kylie", byNameThenEmail.reverse().min(accounts).getUsername());
 ```
 
 ---V
