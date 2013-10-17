@@ -81,6 +81,7 @@ public int compareTo(Account o) {
 * Read in the Accounts file into a List of Strings and display the count of lines
 * Write out your Accounts file to a new file, add a new "website" field guessed from their email addresss (using a Splitter)
 * Use a StopWatch to time how long your transformation parts take
-* Implment your own compareTo() for Account using a ComparisonChain. Sort the collection based on email, then name.
+* Write a custom ToString to output a subset of fields from Account
+* Implement your own compareTo() for Account using a ComparisonChain. Sort the collection based on email, then name.
 
 
