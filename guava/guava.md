@@ -64,7 +64,7 @@ Press the ESC key to go overview
 * Good patterns from smart people
 * Absorbs old "Google Collections" lib
 * Apache 2 license
-* You will use it every day life - it's like riding a Unicorn
+* You will use it every day - it's like riding a Unicorn
 
 ---V
 
