@@ -51,3 +51,10 @@ assertEquals("2", glen.getPassword());
 * Configure your own .removalListener() to cleanup on removal
 * Provides asMap() option which returns ConcurrentMap 
 
+---
+
+# Lab Exercise
+
+* Filter your collection of PMs to only show the ones from Queensland
+* Transform your collection of PMs into a collectionof Accounts, creating passwords based on last name
+* Write a cache that lazily loads a PM's details from your datafile, and caches them for a few seconds
