@@ -1,7 +1,7 @@
 # Files
 
 * Copying, Renaming
-* Simple reading
+* Simple reading & writing
 * Most of this is replace in Java 7
 
 ---V
