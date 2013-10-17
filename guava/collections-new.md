@@ -79,7 +79,16 @@ assertEquals("VY", modelDetails.get("Holden"));
 assertEquals("XA", modelDetails.get("Ford"));
 ```
 
+---
+
+# Lab Exercise
 
 
-
+* Write some code to read in a file containing [Australian Prime Ministers](http://en.wikipedia.org/wiki/Prime_Minister_of_Australia#List_of_prime_ministers)
+* Create a MultiSet of the PM's party
+* Output a party and the number of times they were in power
+* Sort the collection to find the greatest and least elected parties (and maybe top 3)
+* Re-read the data into a Table structure
+* Extract a list of States from your table
+* Create a BiMap of PM Number to PM, and try access it from either side.
 
