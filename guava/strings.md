@@ -156,14 +156,8 @@ assertEquals("abc", CharMatcher.anyOf("cba").retainFrom("123abcdef"));
 * collapseFrom(), trimAndCollapseFrom()
 * replaceFrom()
 
----V
-
-## Lab Ideas
-
-* Shorten a long string to "A long stri.." making sure to not split a word like I did here.
-
 ```java
-int endOfSentence = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastIndexOf(myString);
+int whatAmI = CharMatcher.WHITESPACE.or(CharMatcher.anyOf(",.!")).lastIndexOf(myString);
 ```
 
 
